@@ -11,6 +11,9 @@ namespace Collections
             Console.WriteLine("****************************************");
             Console.WriteLine("CREATING A STACK OF FRUITS");
             Stack();
+            Console.WriteLine("****************************************");
+            Console.WriteLine("CREATING A DICTIONARY");
+            Dictionary();
         }
 
         private  static void List()
@@ -47,6 +50,21 @@ namespace Collections
             {
                 Console.WriteLine(element);
             }
+        }
+
+
+        private static void Dictionary()
+        {
+            Dictionary<int,string> dictionary = new Dictionary<int,string>();
+            dictionary.Add(1, "RAM");
+            dictionary.Add(2, "SITA");
+            dictionary.Add(3, "POOJA");
+
+            foreach (var element in dictionary)
+            {
+                Console.WriteLine(element);
+            }
+            Console.WriteLine("SHOWS FIRST POSITON: " + dictionary[1]);
         }
     }
 }
